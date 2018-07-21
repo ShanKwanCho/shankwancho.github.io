@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <br>
+    <br>
+    <br>  
+    
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+            border-right:1px solid #bbb;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        .fa-pinterest {
+            background: #cb2027;
+            color: white;
+        }
+
+        .fa-snapchat-ghost {
+            background: #fffc00;
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+
+        .fa-skype {
+            background: #00aff0;
+            color: white;
+        }
+
+        .fa-android {
+            background: #a4c639;
+            color: white;
+        }         
+        .fa-vimeo {
+            background: #45bbff;
+            color: white;
+        }
+        .fa-yahoo {
+            background: #430297;
+            color: white;
+        }
+        .fa-soundcloud {
+            background: #ff5500;
+            color: white;
+        }
+
+
+    </style>
+
+    <style>
+        body {
+            color: black;
+        }
+
+        h1 {
+            color: red;
+        }
+        * {box-sizing:border-box}
+        body {font-family: Verdana,sans-serif;}
+        .mySlides {display:none}
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+        }
+    </style>
+    <style>
+
+        p.big {
+            line-height: 150%;
+        }
+    </style>
+    <style>
+        * {box-sizing:border-box}
+        body {font-family: Verdana,sans-serif;margin:0}
+        .mySlides {display:none}
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next,.text {font-size: 11px}
+        }
+    </style>
+
+    <style>
+        p.ex1 {
+            padding: 2cm;           
+        }
+    </style>
+    
+</head>
+<body>
+<!--
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand" href="#">Project name</a> 
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="http://www.csc412sfsu.com/~scho4/">Home</a></li>
+                    <li><a href="http://www.csc412sfsu.com/~scho4/myclass.html">Mother Land</a></li>
+                    <li><a href="http://www.csc412sfsu.com/~scho4/current.html">Current</a></li>
+                    <li><a href="http://www.csc412sfsu.com/~scho4/Visitor.html">Visitor Page</a></li>
+                    <li style="float:right"><a href="http://www.csc412sfsu.com/~scho4/about.html">About</a></li>
+                </ul>
+            </div><!--/.nav-collapse 
+        </div>
+    </nav>
+-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="active"><a href="http://www.csc412sfsu.com/~scho4/">Home</a></li>
+                    <li><a href="http://www.csc412sfsu.com/~scho4/myclass.html">Mother Land</a></li>
+                    <li><a href="http://www.csc412sfsu.com/~scho4/current.html">Current</a></li>
+                    <li><a href="http://www.csc412sfsu.com/~scho4/Visitor.html">Visitor Page</a></li>
+                    <li style="float:right"><a href="http://www.csc412sfsu.com/~scho4/about.html">About</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+  
+    <div class="container">
+
+        <div class="starter-template">
+            <h1>Bootstrap starter template</h1>
+            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+    <h1 style="text-align:center;">Myanmar (The Golden Land)</h1>
+    <p  class="ex1"> This is brief story about 3 famous cities in Myanmar.</p>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="http://myanmarprivateholidays.com/wp-content/uploads/2016/05/fishing-inle-lake.jpg" style="width:100%">
+            <div class="text"> Inle Lake </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="http://myanmarheritagetours.com/wp-content/uploads/2016/08/Kyite-Htee-Yoe-Cropped-2-1024x509.jpg" style="width:100%">
+            <div class="text">Kyite Htee Yoe</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5230032533001_5203619412001-vs.jpg?pubId=5104226627001&videoId=5203619412001" style="width:100%">
+            <div class="text">Bagan</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <h2 style="text-align:center;"> Inle Lake </h2>
+    <p class="ex1"> <strong>Inle Lake (Burmese)</strong>, is a freshwater lake located in the Nyaungshwe Township of Taunggyi District of Shan State, part of Shan Hills in Myanmar (Burma). It is the second largest lake in Myanmar with an estimated surface area of 44.9 square miles (116 km2), and one of the highest at an elevation of 2,900 feet (880 m). During the dry season, the average water depth is 7 feet (2.1 m), with the deepest point being 12 feet (3.7 m), but during the rainy season this can increase by 5 feet (1.5 m).
+        The watershed area for the lake lies to a large extent to the north and west of the lake. The lake drains through the Nam Pilu or Balu Chaung on its southern end. There is also a hot spring on its northwestern shore.
+        Although the lake is not large, it contains a number of endemic species. Over twenty species of snails and nine species of fish are found nowhere else in the world. Some of these, like the silver-blue scaleless Sawbwa barb, the crossbanded dwarf danio, and the Lake Inle danio, are of minor commercial importance for the aquarium trade. It hosts approximately 20,000 brown and black head migratory seagulls in November, December and January.[1]
+        In June 2015, it became Myanmar's first designated place of World Network of Biosphere Reserves.[2] It was one of 20 places added at the Unesco's 27th Man and the Biosphere (MAB) International Coordinating Council (ICC) meeting.[3]
+        [Source: Wikipedia]
+    </p>
+    <hr>
+    <br>
+    <h3 style="text-align:center;">Mount Kyaiktiyo (The Golden Rock)</h3>
+    
+    
+
+    <p  class="ex1">         <strong>Mount Kyaiktiyo (Kyite Htee Yoe)</strong>, famous for the huge golden rock perched at its summit, is one of the three most sacred religious sites in Myanmar, along with the Shwedagon Pagoda and the Mahamuni Temple. Pilgrims come here from far and wide to worship and add gold leaf to the rock, which seems to defy gravity by delicately balancing on the edge of the 1100-metre high mountain.
+        For many visitors, the rock (standing 7.6 metres tall) and the gilded pagoda which sits on top of it (itself 7.3 metres tall), which are said to cover a hair of the Buddha, are the main draw, but another reason to make the journey are the panoramic 360 degree views of the surrounding Mon State mountains from the summit. Bear in mind that the summit area can get very crowded during the peak season from November to March.[Source: Wikipedia]
+    </p>
+    <hr>
+    <br>
+    <h4 style="font-size:30px" align="center">Bagan (Ancient City)</h4>
+
+    <p  class="ex1">         <strong>Bagan (Burmese:formerly Pagan)</strong> is an ancient city located in the Mandalay Region of Myanmar. From the 9th to 13th centuries, the city was the capital of the Pagan Kingdom, the first kingdom that unified the regions that would later constitute modern Myanmar. During the kingdom's height between the 11th and 13th centuries, over 10,000 Buddhist temples, pagodas and monasteries were constructed in the Bagan plains alone, of which the remains of over 2,200 temples and pagodas still survive to the present day.
+
+        The Bagan Archaeological Zone is a main attraction for the country's nascent tourism industry. It is seen by many as equal in attraction to Angkor Wat in Cambodia.[1][Source: Wikipedia]        
+    </p>
+
+
+    
+    
+
+
+
+<center> <small>Copyright 2017 Wikipedia</small></center>
+</body>
+</html>
+
+<!--
+<html>
+    <head>
+        <title>Current Page</title>
+        
+    </head>
+    <body>
+
+        <h1>Current Heading </h1>
+        <p>Current Paragraph.</p>
+        <ul>
+            <li><a href="http://www.csc412sfsu.com/~scho4/">Home</a></li>
+        </ul>
+
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+        <form action="Visitor.php" method="get">
+            FirstName: <input type="text" name="firstname"><br>
+            LastName: <input type="text" name="lastname"><br>
+            E-mail: <input type="text" name="email"><br>
+            <input type="submit">
+        </form>
+        
+        
+
+    </body>
+</body>
+</html>
+-->

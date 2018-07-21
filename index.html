@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            /* Remove the navbar's default margin-bottom and rounded borders */ 
+            .navbar {
+                margin-bottom: 10;
+                border-radius: 0;
+                             
+            }
+
+            /* Add a gray background color and some padding to the footer */
+            footer {
+                background-color: #00aff0;
+                padding: 50px;
+            }
+        </style>
+
+        <style>
+            .container {
+                position: relative;
+                width: 100%;
+            }
+
+            .image {
+                opacity: 1;
+                display: block;
+                width: 50%;
+                height: auto;
+                transition: .5s ease;
+                backface-visibility: hidden;
+            }
+
+            .middle {
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%)
+            }
+
+            .container:hover .image {
+                opacity: 0.3;
+            }
+
+            .container:hover .middle {
+                opacity: 1;
+            }
+
+            .text {
+                background-color: #4CAF50;
+                color: black;
+                font-size: 50px;
+                font-family:times new roman;
+                font-weight:bold;
+                font-style:italic;
+                padding: 16px 32px;
+            }
+        </style>
+
+    </head>
+
+    <body   style="background-color:skyblue;">
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="http://www.csc412sfsu.com/~scho4/">SC</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="http://www.csc412sfsu.com/~scho4/">Home</a></li>
+                        <li><a href="http://www.csc412sfsu.com/~scho4/myclass.html">Mother Land</a></li>                     
+                        <li><a href="http://www.csc412sfsu.com/~scho4/Visitor.html">Visitor Page</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="http://www.csc412sfsu.com/~scho4/about.html"><span class="glyphicon glyphicon-log-in"></span> About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <div class="container text-center">
+                <h1 style="font-size:50px;">Life is either a daring advanture or nothing.</h1>      
+                <p>Helen Keller</p>
+            </div>
+        </div>
+
+        <!--<center><img src="http://www.telegraph.co.uk/content/dam/Travel/leadAssets/26/50/burma-river-cruise_2650313a-xlarge.jpg" alt="pagoda" style="width:1300px;height:900px;"></center>-->
+        <div class="container">
+            <img src="http://www.telegraph.co.uk/content/dam/Travel/leadAssets/26/50/burma-river-cruise_2650313a-xlarge.jpg" alt="Avatar" class="image" style="width:1400px;height:900px;">
+            <div class="middle">
+                <div class="text">Inspired In Traveling?</div>
+                 
+            </div>
+        </div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="../../dist/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+        -->
+        <br>
+    <center><small>  2017 Shan Kwan Cho @ Copyright</small></center>
+</body> 
+</html>
