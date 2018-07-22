@@ -1,124 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Bootstrap Example</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <style>
-            /* Remove the navbar's default margin-bottom and rounded borders */ 
-            .navbar {
-                margin-bottom: 10;
-                border-radius: 0;
-                             
-            }
 
-            /* Add a gray background color and some padding to the footer */
-            footer {
-                background-color: #00aff0;
-                padding: 50px;
-            }
-        </style>
+<head>
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <style>
-            .container {
-                position: relative;
-                width: 100%;
-            }
+  <title>Folio - Personal Portfolio Template</title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-            .image {
-                opacity: 1;
-                display: block;
-                width: 50%;
-                height: auto;
-                transition: .5s ease;
-                backface-visibility: hidden;
-            }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
 
-            .middle {
-                transition: .5s ease;
-                opacity: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%)
-            }
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-            .container:hover .image {
-                opacity: 0.3;
-            }
+  <!-- Libraries CSS Files -->
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/hover/hover.min.css" rel="stylesheet">
 
-            .container:hover .middle {
-                opacity: 1;
-            }
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
 
-            .text {
-                background-color: #4CAF50;
-                color: black;
-                font-size: 50px;
-                font-family:times new roman;
-                font-weight:bold;
-                font-style:italic;
-                padding: 16px 32px;
-            }
-        </style>
+  <!-- Responsive css -->
+  <link href="css/responsive.css" rel="stylesheet">
 
-    </head>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.png">
 
-    <body   style="background-color:skyblue;">
+  <!-- =======================================================
+    Theme Name: Folio
+    Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
 
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>                        
-                    </button>
-                    <a class="navbar-brand" href="http://www.csc412sfsu.com/~scho4/">SC</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="http://www.csc412sfsu.com/~scho4/">Home</a></li>
-                        <li><a href="http://www.csc412sfsu.com/~scho4/myclass.html">Mother Land</a></li>                     
-                        <li><a href="http://www.csc412sfsu.com/~scho4/Visitor.html">Visitor Page</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="http://www.csc412sfsu.com/~scho4/about.html"><span class="glyphicon glyphicon-log-in"></span> About</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<body>
 
-        <div class="jumbotron">
-            <div class="container text-center">
-                <h1 style="font-size:50px;">Life is either a daring advanture or nothing.</h1>      
-                <p>Helen Keller</p>
-            </div>
+  <!-- start section navbar -->
+  <nav id="main-nav">
+    <div class="row">
+      <div class="container">
+
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="logo"></a>
         </div>
 
-        <!--<center><img src="http://www.telegraph.co.uk/content/dam/Travel/leadAssets/26/50/burma-river-cruise_2650313a-xlarge.jpg" alt="pagoda" style="width:1300px;height:900px;"></center>-->
-        <div class="container">
-            <img src="http://www.telegraph.co.uk/content/dam/Travel/leadAssets/26/50/burma-river-cruise_2650313a-xlarge.jpg" alt="Avatar" class="image" style="width:1400px;height:900px;">
-            <div class="middle">
-                <div class="text">Inspired In Traveling?</div>
-                 
-            </div>
-        </div>
-        <!-- Bootstrap core JavaScript
-    ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
+        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-        <script src="../../dist/js/bootstrap.min.js"></script>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
-        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+        <ul class="nav-menu list-unstyled">
+          <li><a href="#header" class="smoothScroll">Home</a></li>
+          <li><a href="#about" class="smoothScroll">About</a></li>
+          <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+          <li><a href="#journal" class="smoothScroll">Blog</a></li>
+          <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End section navbar -->
+
+
+  <!-- start section header -->
+  <div id="header" class="home">
+
+    <div class="container">
+      <div class="header-content">
+        <h1>I'm <span class="typed"></span></h1>
+        <p>Designer, Developer, Freelancer</p>
+
+        <ul class="list-unstyled list-social">
+          <li><a href="https://www.linkedin.com/in/shan-cho-22895410b/"><i class="ion-social-linkedin "></i></a></li>
+          <li><a href="https://twitter.com/choshankwan"><i class="ion-social-twitter"></i></a></li>
+          <li><a href="https://github.com/ShanKwanCho"><i class="ion-social-github"></i></a></li>
+          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+          <li><a href="https://plus.google.com/u/0/114817422039643251946"><i class="ion-social-googleplus"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End section header -->
+
+
+  <!-- start section about us -->
+  <div id="about" class="paddsection">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-lg-4 ">
+          <div class="div-img-bg">
+            <div class="about-img">
+              <img src="images/me.jpg" class="img-responsive" alt="me">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="about-descr">
+
+            <p class="p-heading"> Yo! I'm a Junior student at San Francisco State University studying Computer Science. </p>
+            <p class="separator">I am a big fan of new tech. I enjoy creating new things.</p>
+            <p class="separator">I am very enthusiastic in learning Artificial Intelligence and Machine Learning. </p>
+            <p class="separator"> Over this summer, I am interning at Zapptitude,Inc as a andriod software developer.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end section about us -->
+
+
+  <!-- start section services -->
+  <div id="services">
+    <div class="container">
+
+        <div class="services-carousel owl-theme">
+
+          <div class="services-block">
+
+            <i class="ion-ios-browsers-outline"></i>
+            <span>UI/UX DESIGN</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-lightbulb-outline"></i>
+            <span>BRAND IDENTITY</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-color-wand-outline"></i>
+            <span>WEB DESIGN</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-social-android-outline"></i>
+            <span>MOBILE APPS</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-analytics-outline"></i>
+            <span>Analytics</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-camera-outline"></i>
+            <span>PHOTOGRAPHY</span>
+            <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+
+          </div>
+
+        </div>
+
+    </div>
+
+  </div>
+  <!-- end section services -->
+
+
+  <!-- start section portfolio -->
+  <div id="portfolio" class="text-center paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>My Portfolio</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="portfolio-list">
+
+            <ul class="nav list-unstyled" id="portfolio-flters">
+              <li class="filter filter-active" data-filter=".all">all</li>
+              <li class="filter" data-filter=".branding">branding</li>
+              <li class="filter" data-filter=".mockups">mockups</li>
+              <li class="filter" data-filter=".uikits">ui kits</li>
+              <li class="filter" data-filter=".webdesign">web design</li>
+              <li class="filter" data-filter=".photography">photography</li>
+            </ul>
+
+          </div>
+
+          <div class="portfolio-container">
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
+              <a class="popup-img" href="images/portfolio/1.jpg">
+                <img src="images/portfolio/1.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
+              <a class="popup-img" href="images/portfolio/2.jpg">
+                <img src="images/portfolio/2.jpg"  alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn">
+              <a class="popup-img" href="images/portfolio/3.jpg">
+                <img src="images/portfolio/3.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
+              <a class="popup-img" href="images/portfolio/4.jpg">
+                <img src="images/portfolio/4.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
+              <a class="popup-img" href="images/portfolio/5.jpg">
+                <img src="images/portfolio/5.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
+              <a class="popup-img" href="images/portfolio/6.jpg">
+                <img src="images/portfolio/6.jpg" alt="img">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End section portfolio -->
+
+
+  <!-- start section journal -->
+  <div id="journal" class="text-left paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>journal</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="journal-block">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="blog-single.html"><img src="images/blog-post-1.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
+                <p class="separator">To an English person, it will seem like simplified English
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="blog-single.html"><img src="images/blog-post-2.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a href="#blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
+                <p class="separator">To an English person, it will seem like simplified English
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="blog-single.html"><img src="images/blog-post-3.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
+                <p class="separator">To an English person, it will seem like simplified English
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End section journal -->
+
+
+  <!-- start sectoion contact -->
+  <div id="contact" class="paddsection">
+    <div class="container">
+      <div class="contact-block1">
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="contact-contact">
+
+              <h2 class="mb-30">GET IN TOUCH</h2>
+
+              <ul class="contact-details">
+                <li><span>23 Main, Street</span></li>
+                <li><span>New York, United States</span></li>
+                <li><span>+88 01912704287</span></li>
+                <li><span>example@example.com</span></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="row">
+
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+
+                <div class="col-lg-6">
+                  <div class="form-group contact-block1">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- start sectoion contact -->
+
+
+  <!-- start section footer -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="https://www.linkedin.com/in/shan-cho-22895410b/"><i class="ion-social-linkedin "></i></a></li>
+          <li><a href="https://twitter.com/choshankwan"><i class="ion-social-twitter"></i></a></li>
+          <li><a href="https://github.com/ShanKwanCho"><i class="ion-social-github"></i></a></li>
+          <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+          <li><a href="https://plus.google.com/u/0/114817422039643251946"><i class="ion-social-googleplus"></i></a></li>
+
+        </ul>
+
+      </div>
+
+      <p>&copy; Copyrights ShanCho. All rights reserved.</p>
+
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
         -->
-        <br>
-    <center><small>  2017 Shan Kwan Cho @ Copyright</small></center>
-</body> 
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+
+    </div>
+  </div>
+  <!-- End section footer -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/typed/typed.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+
 </html>
