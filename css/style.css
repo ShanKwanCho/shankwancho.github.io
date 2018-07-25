@@ -213,7 +213,7 @@ nav ul li a {
   color:  #34282C; /* words in nav bar */
   font-family: 'Poppins', helvetica;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 36px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -224,8 +224,8 @@ nav ul li a {
 }
 
 .logo img {
-  width: 100px;
-  height: 50px;
+  width: 140px;
+  height: -20px;
 }
 
 .responsive {
