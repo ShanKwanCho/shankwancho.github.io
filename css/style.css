@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
+  font-family: monospace;; /*  change fonts for My Portfolio/ My Article/ Get In Touch */
   color: #292929;
   font-weight: 600;
 }
@@ -124,7 +125,9 @@ p {
   margin-bottom: 70px;
 }
 
+
 .section-title h2 {
+  
   font-size: 25px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -238,7 +241,7 @@ nav ul li a {
 }
 
 /*----------------------------------------------------------------------------------*/
-/*  Header
+/*  Header 'Playfair Display'
 /*-----------------------------------------------------------------------------------*/
 
 #header {
@@ -249,6 +252,8 @@ nav ul li a {
 
 
 #header .header-content {
+   /*  cursive = italic style | fantasy = rome style | monospace = apple system style font */
+  font-family:  monospace;  /* added to change "I'm a Shan Cho,......'" */
   height: 100vh;
   text-align: left;
   width: 100%;
@@ -312,7 +317,7 @@ nav ul li a {
 }
 
 #about .about-descr .p-heading {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif; 
   font-size: 28px;
   text-align: left;
 }
@@ -527,6 +532,7 @@ p.a {
 /*-----------------------------------------------------------------------------------*/
 
 #contact {
+ 
   height: auto;
   width: 100%;
 }
