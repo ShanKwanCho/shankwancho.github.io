@@ -312,7 +312,7 @@ nav ul li a {
   box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
   margin-top: -60px;
   margin-left: 30px;
-  height: 800px; /* change here if the paragaraph of about me is updated / change appropriate with the text size */
+  height: 900px; /* change here if the paragaraph of about me is updated / change appropriate with the text size */
   object-fit: cover;
 }
 
