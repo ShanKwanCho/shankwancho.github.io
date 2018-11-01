@@ -1,5 +1,5 @@
 # shancho.me
 
-nc.com  
+https://www.namecheap.com/
 
 free domain for student
