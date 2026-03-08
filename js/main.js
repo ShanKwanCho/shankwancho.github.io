@@ -1,4 +1,4 @@
-/*global $, jQuery, alert*/
+﻿/*global $, jQuery, alert*/
 $(document).ready(function() {
 
   'use strict';
@@ -23,14 +23,13 @@ $(document).ready(function() {
 
     $(this).addClass('active');
 
-    var target = this.hash,
-        menu = target;
+    var target = this.hash;
 
     target = $(target);
     $('html, body').stop().animate({
       'scrollTop': target.offset().top - 80
     }, 500, 'swing', function() {
-      window.location.hash = target.selector;
+      window.location.hash = target[0] ? ('#' + target[0].id) : '';
       $(document).on("scroll", onScroll);
     });
   });
@@ -75,15 +74,15 @@ $(document).ready(function() {
   //  Typed Js
   // ========================================================================= //
 
-  var typed = $(".typed");
-
-  $(function() {
-    typed.typed({
-      strings: ["Shan Cho.", "a Software Engineer.", "a Developer.", "a Freelancer.", "a Guitarist. 🎸"],
+  if ($('.typed').length) {
+    new Typed('.typed', {
+      strings: ["Shan Cho.", "a Software Engineer.", "a Developer.", "a Freelancer.", "a Guitarist."],
       typeSpeed: 100,
-      loop: true,
+      backSpeed: 50,
+      backDelay: 2000,
+      loop: true
     });
-  });
+  }
 
 
   // ========================================================================= //
@@ -155,3 +154,4 @@ $(document).ready(function() {
   magnifPopup();
 
 });
+
