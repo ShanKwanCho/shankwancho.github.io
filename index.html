@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shan Kwan Cho | Sr Technical Support Engineer @ Microsoft</title>
+  <meta name="description" content="Shan Kwan Cho — Sr Technical Support Engineer at Microsoft. Power BI, Azure Analysis Services, Generative AI, and full-stack development. San Francisco Bay Area.">
+  <meta name="keywords" content="Shan Kwan Cho, Microsoft, Power BI, Azure Analysis Services, Software Engineer, Portfolio">
+  <meta property="og:title" content="Shan Kwan Cho | Portfolio">
+  <meta property="og:description" content="Sr Technical Support Engineer at Microsoft — Power BI, Azure, Generative AI.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">SHAN<span class="accent">~</span>CHO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-accent btn-sm px-3" href="https://drive.google.com/file/d/11VydCIp0fKv8u9SY9BIAdNGvWsLCMZNU/view?usp=sharing" target="_blank" rel="noopener">
+              <i class="bi bi-download me-1"></i>Resume
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <header id="home" class="hero d-flex align-items-center">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 reveal">
+          <p class="hero-kicker mb-3"><span class="dot"></span> San Francisco Bay Area, CA</p>
+          <h1 class="hero-title">Hi, I'm <span class="gradient-text">Shan Kwan Cho</span></h1>
+          <h2 class="hero-typed mb-4"><span id="typed"></span><span class="cursor">|</span></h2>
+          <p class="hero-sub mb-4">Sr Technical Support Engineer at <strong>Microsoft</strong> — helping teams get the most
+            out of Power BI, Azure Analysis Services, and Fabric, with a background in full-stack
+            engineering and a passion for Generative AI.</p>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="#projects" class="btn btn-accent btn-lg px-4">View Projects</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg px-4">Get in Touch</a>
+          </div>
+          <div class="social-links d-flex gap-3">
+            <a href="https://www.linkedin.com/in/shancho/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/ShanKwanCho" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://www.kaggle.com/shancho" target="_blank" rel="noopener" aria-label="Kaggle"><i class="bi bi-bar-chart-line"></i></a>
+            <a href="mailto:shankwancho@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center reveal">
+          <div class="hero-photo-wrap mx-auto">
+            <img src="images/me.jpg" alt="Shan Kwan Cho" class="hero-photo"
+                 onerror="this.style.display='none';document.getElementById('avatarFallback').style.display='flex';">
+            <div id="avatarFallback" class="avatar-fallback">SC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down"><i class="bi bi-chevron-down"></i></a>
+  </header>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">01 · About</span>
+        <h2 class="section-title">A bit about me</h2>
+      </div>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-7 reveal">
+          <div class="glass-card h-100">
+            <p>I'm a Computer Science graduate (Honors) from San Francisco State University with a Mathematics minor,
+              currently a <strong>Sr Technical Support Engineer at Microsoft</strong>. I serve as a Subject Matter Expert in
+              Azure Analysis Services — leading incident reviews, debugging product regressions alongside engineering teams,
+              and consulting on model and query design for enterprise customers, including S500 and M365 programs.</p>
+            <p>Before Microsoft, I was a Technology Lead at Infosys supporting Dynamics 365 CRM, and a Software / DevOps
+              Engineer on REI's Order Flow Tool building Angular frontends and Spring Boot APIs on AWS.</p>
+            <p class="mb-0">Outside of work I explore Generative AI, AI Foundry, and Copilot Studio, compete in Microsoft
+              Global Hackathons (2023–25), play guitar, and take photos around the Bay Area.</p>
+          </div>
+        </div>
+        <div class="col-lg-5 reveal">
+          <div class="row g-4 h-100">
+            <div class="col-6"><div class="stat-card"><div class="stat-num" data-count="7">0</div><div class="stat-label">Years in tech</div></div></div>
+            <div class="col-6"><div class="stat-card"><div class="stat-num" data-count="3">0</div><div class="stat-label">Hackathon awards</div></div></div>
+            <div class="col-6"><div class="stat-card"><div class="stat-num" data-count="4">0</div><div class="stat-label">Certifications</div></div></div>
+            <div class="col-6"><div class="stat-card"><div class="stat-num" data-count="40">0</div><div class="stat-label">Cases/month resolved</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience ===== -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">02 · Experience</span>
+        <h2 class="section-title">Where I've worked</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="glass-card">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+              <h3 class="tl-role">Sr Technical Support Engineer</h3>
+              <span class="tl-badge">Oct 2022 – Present</span>
+            </div>
+            <p class="tl-company">Microsoft · Remote, California</p>
+            <ul class="tl-list">
+              <li>Subject Matter Expert in Azure Analysis Services — leading incident reviews, mentorship, and troubleshooting plans.</li>
+              <li>Resolving Power BI, SSAS/AAS (Tabular &amp; Multidimensional), and Fabric (ASWL performance) issues for enterprise customers.</li>
+              <li>Partnering with product engineering to test behavior, identify regressions, and manage ICM incidents and hotfixes.</li>
+              <li>Consulting on model and query design to optimize customers' SSAS/AAS instances.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="glass-card">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+              <h3 class="tl-role">Technology Lead</h3>
+              <span class="tl-badge">Aug 2019 – Sep 2022</span>
+            </div>
+            <p class="tl-company">Infosys Limited · San Francisco, CA</p>
+            <ul class="tl-list">
+              <li><strong>Microsoft (Dynamics 365 CRM):</strong> owned up to 40 customer issues/month across system, network, performance, and data-processing components.</li>
+              <li><strong>REI (Software Engineer):</strong> built the Order Flow Tool with Angular and Spring Boot REST APIs for merchandise planners and vendors.</li>
+              <li><strong>REI (DevOps Engineer):</strong> resolved environment, firewall, and AWS quota issues within SLA; validated releases in QA.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="glass-card">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+              <h3 class="tl-role">Software Engineer Intern</h3>
+              <span class="tl-badge">May 2018 – Aug 2018</span>
+            </div>
+            <p class="tl-company">Zapptitude, Inc. · Cupertino, CA</p>
+            <ul class="tl-list">
+              <li>Built a native Android app (Java, MVP architecture) for first-grade math aligned with Common Core standards.</li>
+              <li>Integrated assessment analytics SDK to track student usage; prototyped UX with InVision.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker edu"></div>
+          <div class="glass-card">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+              <h3 class="tl-role">B.S. Computer Science (Honors), Minor in Mathematics</h3>
+              <span class="tl-badge">2017 – 2019</span>
+            </div>
+            <p class="tl-company mb-0">San Francisco State University</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">03 · Skills</span>
+        <h2 class="section-title">Tools I work with</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-3 reveal">
+          <div class="glass-card skill-card h-100">
+            <div class="skill-icon"><i class="bi bi-code-slash"></i></div>
+            <h3>Programming &amp; Frontend</h3>
+            <div class="chips">
+              <span>Python</span><span>Java</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Angular 6+</span><span>Bootstrap</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3 reveal">
+          <div class="glass-card skill-card h-100">
+            <div class="skill-icon"><i class="bi bi-cloud"></i></div>
+            <h3>Azure &amp; Data Platform</h3>
+            <div class="chips">
+              <span>Analysis Services (SSAS/AAS)</span><span>Power BI</span><span>Fabric</span><span>SQL Server</span><span>DAX Studio</span><span>Tabular Editor</span><span>Kusto Query</span><span>Power Platform</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3 reveal">
+          <div class="glass-card skill-card h-100">
+            <div class="skill-icon"><i class="bi bi-stars"></i></div>
+            <h3>AI &amp; Machine Learning</h3>
+            <div class="chips">
+              <span>Generative AI</span><span>AI Foundry</span><span>Copilot Studio</span><span>Prompt Engineering</span><span>Deep Learning</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3 reveal">
+          <div class="glass-card skill-card h-100">
+            <div class="skill-icon"><i class="bi bi-gear-wide-connected"></i></div>
+            <h3>Cloud &amp; Tools</h3>
+            <div class="chips">
+              <span>AWS (EC2, S3, RDS)</span><span>Spring Boot</span><span>Microservices</span><span>REST API</span><span>Docker</span><span>Jenkins</span><span>Git</span><span>Dynamics 365 CRM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-3 mt-2 reveal">
+        <div class="col-12"><h3 class="cert-head">Certifications</h3></div>
+        <div class="col-md-6 col-xl-3"><div class="cert-item"><i class="bi bi-patch-check-fill"></i> Deep Learning Specialization — deeplearning.ai</div></div>
+        <div class="col-md-6 col-xl-3"><div class="cert-item"><i class="bi bi-patch-check-fill"></i> Microsoft Azure Fundamentals</div></div>
+        <div class="col-md-6 col-xl-3"><div class="cert-item"><i class="bi bi-patch-check-fill"></i> ML &amp; Deep Learning Bootcamp — mlacademy.io</div></div>
+        <div class="col-md-6 col-xl-3"><div class="cert-item"><i class="bi bi-patch-check-fill"></i> Microsoft Global Hackathon 2023/24/25</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">04 · Projects</span>
+        <h2 class="section-title">Selected work</h2>
+      </div>
+      <div class="filter-bar reveal" role="tablist">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="game">Game Dev</button>
+      </div>
+      <div class="row g-4" id="projectGrid">
+        <div class="col-md-6 col-lg-4 project-item reveal" data-cat="mobile ml">
+          <article class="project-card">
+            <div class="project-thumb" style="--img:url('images/portfolio/docAI.jpg')"><span class="project-emoji">🩺</span></div>
+            <div class="project-body">
+              <span class="project-award"><i class="bi bi-trophy-fill"></i> Best Mobile Hacks Award · SF Hacks MLH 2019</span>
+              <h3>DocAI (iOS)</h3>
+              <p>AI-powered health assistant built at SF Hacks 2019.</p>
+              <div class="project-links">
+                <a href="https://devpost.com/software/doc-ai" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Devpost</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 project-item reveal" data-cat="mobile">
+          <article class="project-card">
+            <div class="project-thumb" style="--img:url('images/portfolio/3.jpg')"><span class="project-emoji">🗣️</span></div>
+            <div class="project-body">
+              <span class="project-award"><i class="bi bi-trophy-fill"></i> 3rd Place · SF Hacks MLH 2018</span>
+              <h3>Wordy (iOS)</h3>
+              <p>Learn a new language by capturing objects around you.</p>
+              <div class="project-links">
+                <a href="https://github.com/ShanKwanCho/Wordy" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 project-item reveal" data-cat="ml web">
+          <article class="project-card">
+            <div class="project-thumb" style="--img:url('images/portfolio/4.jpg')"><span class="project-emoji">🤖</span></div>
+            <div class="project-body">
+              <h3>Face Recognition Web App</h3>
+              <p>Web app using IBM Watson visual recognition APIs.</p>
+              <div class="project-links">
+                <a href="https://github.com/ShanKwanCho/Face_Recognition_App" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 project-item reveal" data-cat="ml">
+          <article class="project-card">
+            <div class="project-thumb" style="--img:url('images/portfolio/6.jpg')"><span class="project-emoji">📊</span></div>
+            <div class="project-body">
+              <h3>Machine Learning Portfolio</h3>
+              <p>Supervised/unsupervised ML projects and Kaggle competitions.</p>
+              <div class="project-links">
+                <a href="https://github.com/ShanKwanCho/MachineLearning_Porfolio" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+                <a href="https://www.kaggle.com/shancho" target="_blank" rel="noopener"><i class="bi bi-bar-chart-line"></i> Kaggle</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 project-item reveal" data-cat="mobile">
+          <article class="project-card">
+            <div class="project-thumb" style="--img:url('images/portfolio/1.jpg')"><span class="project-emoji">➕</span></div>
+            <div class="project-body">
+              <h3>First Grade Math (Android)</h3>
+              <p>Common Core math app with assessment analytics, built at Zapptitude.</p>
+              <div class="project-links">
+                <a href="https://github.com/zapptitude/first-grade-math-app" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 project-item reveal" data-cat="game">
+          <article class="project-card">
+            <div class="project-thumb" style="--img:url('images/portfolio/2.jpg')"><span class="project-emoji">🎮</span></div>
+            <div class="project-body">
+              <h3>Tank Game (Java)</h3>
+              <p>Classic 2-player tank battle game built for CSC 413 at SFSU.</p>
+              <div class="project-links">
+                <a href="https://github.com/ShanKwanCho/CSC_413_SP18" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="text-center mt-5 reveal">
+        <a class="btn btn-outline-light px-4" href="https://github.com/ShanKwanCho" target="_blank" rel="noopener">
+          <i class="bi bi-github me-2"></i>More on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">05 · Contact</span>
+        <h2 class="section-title">Let's keep in touch</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-5 reveal">
+          <div class="glass-card h-100">
+            <p class="mb-4">Open to interesting conversations, collaborations, and opportunities. The fastest way to reach me:</p>
+            <ul class="contact-list">
+              <li><i class="bi bi-envelope-fill"></i><a href="mailto:shankwancho@gmail.com">shankwancho@gmail.com</a></li>
+              <li><i class="bi bi-telephone-fill"></i><a href="tel:+14156954576">+1 (415) 695-4576</a></li>
+              <li><i class="bi bi-geo-alt-fill"></i>San Francisco Bay Area, CA</li>
+              <li><i class="bi bi-linkedin"></i><a href="https://www.linkedin.com/in/shancho/" target="_blank" rel="noopener">linkedin.com/in/shancho</a></li>
+            </ul>
+            <a class="btn btn-accent mt-3" href="https://drive.google.com/file/d/11VydCIp0fKv8u9SY9BIAdNGvWsLCMZNU/view?usp=sharing" target="_blank" rel="noopener">
+              <i class="bi bi-file-earmark-person me-2"></i>Download Resume
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal">
+          <!-- Powered by FormSubmit.co — delivers to shankwancho@gmail.com.
+               First submission triggers a one-time activation email to that inbox: click "Activate" once and it's live. -->
+          <form class="glass-card" action="https://formsubmit.co/ajax/shankwancho@gmail.com" method="POST" id="contactForm">
+            <input type="hidden" name="_subject" value="New message from your portfolio site">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="cName">Name</label>
+                <input type="text" class="form-control" id="cName" name="name" required placeholder="Your name">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="cEmail">Email</label>
+                <input type="email" class="form-control" id="cEmail" name="email" required placeholder="you@example.com">
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="cSubject">Subject</label>
+                <input type="text" class="form-control" id="cSubject" name="subject" placeholder="What's this about?">
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="cMessage">Message</label>
+                <textarea class="form-control" id="cMessage" name="message" rows="5" required placeholder="Say hello..."></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-accent btn-lg px-4"><i class="bi bi-send me-2"></i>Send Message</button>
+                <p class="form-note mt-2 mb-0" id="formNote"></p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">© <span id="year"></span> Shan Kwan Cho · Built with HTML, CSS, JS &amp; Bootstrap</p>
+      <div class="social-links d-flex gap-3">
+        <a href="https://www.linkedin.com/in/shancho/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/ShanKwanCho" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.kaggle.com/shancho" target="_blank" rel="noopener" aria-label="Kaggle"><i class="bi bi-bar-chart-line"></i></a>
+        <a href="mailto:shankwancho@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
